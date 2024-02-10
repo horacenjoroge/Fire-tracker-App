@@ -23,8 +23,15 @@ a:hover {
 }
 
 body {
- 
+ margin: 0;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.map{
+ width:100vw; 
+ height:100vh; 
+ position: relative;
+}
+
 
 h1 {
   font-size: 3.2em;
