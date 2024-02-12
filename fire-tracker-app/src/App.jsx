@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react'
 import './App.css'
 import Map from './Components/Map'
-
+import Loader from './Components/Loader'
 function App() {
   const [eventData, setEventData] = useState([])
   const[loading, setLoading] = useState(false)
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <div>
-       <Map/>
+       { !loading ? <Map eventData={eventData} />: <Loader />}
       </div>
     
     </>
